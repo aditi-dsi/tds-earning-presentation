@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RevealJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+  <!-- Code highlight -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Intro slide -->
+    <section>
+      <h2>Quarterly Earnings Report</h2>
+      <p>By Technical Consultant</p>
+      <p>Email: <strong>24f2005252@ds.study.iitm.ac.in</strong></p>
+      <aside class="notes">
+        Welcome stakeholders. This is the Q2 earnings presentation.
+      </aside>
+    </section>
+
+    <!-- Markdown slide -->
+    <section data-markdown>
+      <textarea data-template>
+## Earnings Highlights (Markdown Slide)
+
+- Revenue: **$2.5B**
+- Net Profit: **$650M**
+- EPS: **$1.45**
+- Growth: **12% YoY**
+
+Note: Written in **Markdown**
+      </textarea>
+      <aside class="notes">
+        Highlight the year-over-year growth here.
+      </aside>
+    </section>
+
+    <!-- Fragments animation -->
+    <section>
+      <h3>Future Outlook</h3>
+      <ul>
+        <li class="fragment">Digital transformation initiatives</li>
+        <li class="fragment">AI-driven customer analytics</li>
+        <li class="fragment">Sustainable investment strategies</li>
+      </ul>
+      <aside class="notes">
+        Each bullet point will appear one by one.
+      </aside>
+    </section>
+
+    <!-- Code sample with syntax highlighting -->
+    <section>
+      <h3>Sample Code</h3>
+      <pre><code class="language-python">
+def earnings_per_share(net_income, shares_outstanding):
+    return net_income / shares_outstanding
+
+print(earnings_per_share(650000000, 450000000))  # 1.44
+      </code></pre>
+      <aside class="notes">
+        Showing a simple EPS calculation function.
+      </aside>
+    </section>
+
+    <!-- Math formulas -->
+    <section>
+      <h3>Financial Formula</h3>
+      <p>\[
+      \text{EPS} = \frac{\text{Net Income} - \text{Dividends on Preferred Stock}}{\text{Average Outstanding Shares}}
+      \]</p>
+      <aside class="notes">
+        EPS formula demonstration using LaTeX.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- RevealJS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+  });
+</script>
+</body>
+</html>
